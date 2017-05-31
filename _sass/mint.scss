@@ -1,0 +1,37 @@
+.page-header {
+    padding: 1rem;
+}
+
+.project-name {
+    margin:0;
+    line-height: 96px;
+}
+
+.mint-logo {
+    width: 300px;
+    height: 96px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.font-weight-300 {
+    font-weight: 300;
+}
