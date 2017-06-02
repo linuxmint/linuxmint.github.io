@@ -36,15 +36,6 @@ Cinnamon Settings Daemon is a required component of the Cinnamon desktop, i.e. i
 ## <a href="https://github.com/linuxmint/cinnamon-control-center">Cinnamon Control Center</a>
 Cinnamon Control Center is a fork of GNOME Control Center. The official control center of Cinnamon in Cinnamon Settings, which is written in python and part of Cinnamon itself. However, some of the modules are still not yet ported to python, and we have to rely on the C modules, which are found here.
 
-## <a href="https://github.com/linuxmint/mdm">MDM</a>
-MDM, forked from GDM, is a display manager, not necessarily tied to Cinnamon. MDM officially stands for MDM display manager.
-
-## <a href="https://github.com/linuxmint/nemo">Nemo</a>
-Nemo, forked from Nautilus, is the file manager of Cinnamon.
-
-## <a href="https://github.com/linuxmint/muffin">Muffin</a>
-Muffin, forked from Mutter, which is in turn forked from Metacity, is the window manager of Cinnamon. Cinnamon is implemented as a plugin of Muffin.
-
 ## <a href="https://github.com/linuxmint/cinnamon-session">Cinnamon Session</a>
 This is responsible for starting the Cinnamon session. This is typically executed by the login manager (either mdm, xdm, or from your X startup scripts). It will load either your saved session, or it will provide a default session for the user as defined by the system administrator (or the default GNOME installation on your system).
 
@@ -54,12 +45,21 @@ Cinnamon translations is a package that contains the translations used in Cinnam
 ## <a href="https://github.com/linuxmint/cjs">Cjs</a>
 Cjs, fork of Gjs, is the "interpreter" of Cinnamon's javascript code. It is not an actual interpreter - the interpretation is done by SpiderMonkey. Instead, the role of Cjs is to provide bindings to GNOME libraries through GObject Introspection.
 
-## <a href="https://github.com/linuxmint/blueberry">Blueberry</a>
-Blueberry is a bluetooth configuration tool that replaces the old Cinnamon Bluetooth. It depends on GNOME Bluetooth.
-
 ## Linux Mint
 
 Other Linux Mint projects include
+
+## <a href="https://github.com/linuxmint/blueberry">Blueberry</a>
+Blueberry is a bluetooth configuration tool that replaces the old Cinnamon Bluetooth. It depends on GNOME Bluetooth.
+
+## <a href="https://github.com/linuxmint/mdm">MDM</a>
+MDM, forked from GDM, is a display manager, not necessarily tied to Cinnamon. MDM officially stands for MDM display manager.
+
+## <a href="https://github.com/linuxmint/nemo">Nemo</a>
+Nemo, forked from Nautilus, is the file manager of Cinnamon.
+
+## <a href="https://github.com/linuxmint/muffin">Muffin</a>
+Muffin, forked from Mutter, which is in turn forked from Metacity, is the window manager of Cinnamon. Cinnamon is implemented as a plugin of Muffin.
 
 ### <a href="https://github.com/linuxmint/mintupload">Mint Upload</a>
 ### <a href="https://github.com/linuxmint/mintinstall">Mint Install</a>
@@ -71,10 +71,35 @@ Other Linux Mint projects include
 ### <a href="https://github.com/linuxmint/mintupdate">Mint Update</a>
 ### <a href="https://github.com/linuxmint/mintstick">Mint Stick</a>
 ### <a href="https://github.com/linuxmint/live-installer">Live Installer</a>
-### <a href="https://github.com/linuxmint/mint-translations">Mint Translations</a>
-### <a href="https://github.com/linuxmint/mintsources">Mint Sources</a>
-### <a href="https://github.com/linuxmint/mintmenu">Mint Menu</a>
-### <a href="https://github.com/linuxmint/mintwelcome">Mint Welcome</a>
-### <a href="https://github.com/linuxmint/mintdesktop">Mint Desktop</a>
+### Mint Translations
+
+Package with localization files for Linux Mint applications and services
+
+GitHub: [/linuxmint/mint-translations](https://github.com/linuxmint/mint-translations)
+
+### Mint Sources
+
+Configure the sources for installable software and updates, manage PPAs and authentication keys
+
+GitHub: [/linuxmint/mintsources](https://github.com/linuxmint/mintsources)
+
+### Mint Menu
+
+One of the most advanced menus under linux. Mint Menu supports filtering, favorites, easy uninstallation, autosession, and many other features.
+
+GitHub: [/linuxmint/mintmenu](https://github.com/linuxmint/mintmenu)
+
+### Mint Welcome
+
+Linux Mint - welcome dialog. Shows important information about the release/edition of Linux Mint.
+
+[Read more...](/projects/mintwelcome.html)
+
+GitHub: [/linuxmint/mintwelcome](https://github.com/linuxmint/mintwelcome)
+
+### Mint Desktop
+
+GitHub: [/linuxmint/mintdesktop](https://github.com/linuxmint/mintdesktop)
+
 ### <a href="https://github.com/linuxmint/mintdrivers">Mint Drivers</a>
 ### <a href="https://github.com/linuxmint/mintlocale">Mint Locale</a>

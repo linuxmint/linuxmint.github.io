@@ -38,7 +38,15 @@
         View on GitHub
     </a>
 </section>
+{% if page.breadcrumbs %}
+<!--section class="breadcrumbs">
+    {{ page.breadcrumbs }}
 
+    {% for item in page.breadcrumbs %}
+    !!!{{ item }}<br>
+    {% endfor %}
+</section-->
+{% endif %}
 <section class="main-content">
     {{ content }}
 
