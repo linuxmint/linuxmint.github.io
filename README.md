@@ -1,3 +1,7 @@
 # Linux Mint Developer Website sources
 
 This is a source repository for [developer.linuxmint.com](http://developer.linuxmint.com)
+
+## How to run this site locally with Jekyll:
+
+See this manual from GitHub: [Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
