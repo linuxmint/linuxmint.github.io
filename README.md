@@ -5,3 +5,7 @@ This is a source repository for [developer.linuxmint.com](http://developer.linux
 ## How to run this site locally with Jekyll:
 
 See this manual from GitHub: [Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
+
+## Run Jekyll serve
+
+`$ bundle exec jekyll serve`
