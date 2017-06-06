@@ -13,8 +13,11 @@
 </head>
 <body>
 <section class="page-header">
+    {% if page.url == '/' %}
     <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
     <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+    {% endif %}
+    {{ page.categories }}
     <a href="/" class="btn">
         <i class="fa fa-home" aria-hidden="true"></i>
         Home

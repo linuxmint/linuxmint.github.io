@@ -2,3 +2,5 @@ title: Linux Mint Development Center
 description: This is a place where Linux Mint and Cinnamon development starts
 show_downloads: false
 theme: jekyll-theme-cayman
+gems:
+  - jekyll-sitemap
