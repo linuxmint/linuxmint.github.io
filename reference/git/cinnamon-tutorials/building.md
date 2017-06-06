@@ -8,20 +8,20 @@
 
 ### Add APT sources repositories
 
-Open `/etc/apt/sources.list`. For each deb line, add the same line with deb replaced with deb-src. For instance, here's how it should look like in Linux Mint 13:
+Open `/etc/apt/sources.list`. For each deb line, add the same line with deb replaced with deb-src. For instance, here's how it should look like in Linux Mint 18:
 
 ```bash
-deb http://packages.linuxmint.com maya main upstream import
-deb-src http://packages.linuxmint.com maya main upstream import
+deb http://packages.linuxmint.com sara main upstream import
+deb-src http://packages.linuxmint.com sara main upstream import
 
-deb http://archive.ubuntu.com/ubuntu/ precise main restricted universe multiverse
-deb-src http://archive.ubuntu.com/ubuntu/ precise main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu/ xenial main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ xenial main restricted universe multiverse
 
-deb http://archive.ubuntu.com/ubuntu/ precise-updates main restricted universe multiverse
-deb-src http://archive.ubuntu.com/ubuntu/ precise-updates main restricted universe multiverse
+deb http://archive.ubuntu.com/ubuntu/ xenial-updates main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ xenial-updates main restricted universe multiverse
 
-deb http://extras.ubuntu.com/ubuntu precise main
-deb-src http://extras.ubuntu.com/ubuntu precise main
+deb http://extras.ubuntu.com/ubuntu xenial main
+deb-src http://extras.ubuntu.com/ubuntu xenial main
 ```
 
 ### Get build dependencies
