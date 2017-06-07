@@ -6,11 +6,30 @@ permalink: projects.html
 
 Cinnamon is composed a lot of smaller interconnected projects:
 
-## <a href="https://github.com/linuxmint/Cinnamon">Cinnamon</a>
-Cinnamon, forked from GNOME Shell, is the "shell" of Cinnamon. It provides the user interface such as panels, hot corners, menus etc. The ui is written in JavaScript, while its core libraries are written in C.
+<div class="flex flex-row">
+    <img src="/icons/projects/cinnamon-logo.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Cinnamon</h3>
+        <p>
+        Cinnamon, forked from GNOME Shell, is the "shell" of Cinnamon. It provides the user interface such as panels, hot corners, menus etc. The ui is written in JavaScript, while its core libraries are written in C.
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/Cinnamon" target="_blank">/linuxmint/Cinnamon</a>
+        </p>
+    </div>
+</div>
 
-## <a href="http://github.com/linuxmint/cinnamon-screensaver">Cinnamon Screensaver</a>
-Cinnamon Screensaver, forked from GNOME Screensaver, is the screen locker you see when you leave the session idle for the a long time. It currently supports loading xscreensaver hacks as well as webkit screensaver. You can also write your own Cinnamon Screensaver plugin without tying to either xscreensaver or webkit.
+<div class="flex flex-row">
+    <img src="/icons/projects/csd-screensaver-proxy.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Cinnamon Screensaver</h3>
+        <p>
+        Cinnamon Screensaver, forked from GNOME Screensaver, is the screen locker you see when you leave the session idle for the a long time. It currently supports loading xscreensaver hacks as well as webkit screensaver. You can also write your own Cinnamon Screensaver plugin without tying to either xscreensaver or webkit.
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/cinnamon-screensaver" target="_blank">/cinnamon-screensaver</a>
+        </p>
+    </div>
+</div>
+
 
 ## <a href="https://github.com/linuxmint/cinnamon-desktop">Cinnamon Desktop</a>
 Cinnamon Desktop, fork of GNOME desktop, provides certain useful resources for Cinnamon. Most importantly, it contains the schemas for most Cinnamon components, eg. `org.cinnamon.desktop.screensaver`. It also has a small library that provides certain functions used in, say, Cinnamon Screensaver.
@@ -39,67 +58,262 @@ Cinnamon Control Center is a fork of GNOME Control Center. The official control 
 ## <a href="https://github.com/linuxmint/cinnamon-session">Cinnamon Session</a>
 This is responsible for starting the Cinnamon session. This is typically executed by the login manager (either mdm, xdm, or from your X startup scripts). It will load either your saved session, or it will provide a default session for the user as defined by the system administrator (or the default GNOME installation on your system).
 
-## <a href="https://github.com/linuxmint/cinnamon-translations">Cinnamon Translations</a>
-Cinnamon translations is a package that contains the translations used in Cinnamon
+<div class="flex flex-row">
+    <img src="/icons/projects/gtranslator.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Cinnamon Translations</h3>
+        <p>
+        Cinnamon translations is a package that contains the translations used in Cinnamon
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/cinnamon-translations" target="_blank">/cinnamon-translations</a>
+        </p>
+    </div>
+</div>
 
-## <a href="https://github.com/linuxmint/cjs">Cjs</a>
-Cjs, fork of Gjs, is the "interpreter" of Cinnamon's javascript code. It is not an actual interpreter - the interpretation is done by SpiderMonkey. Instead, the role of Cjs is to provide bindings to GNOME libraries through GObject Introspection.
+
+<div class="flex flex-row">
+    <img src="/icons/projects/cinnamon-logo.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>CJS</h3>
+        <p>
+        Cjs, fork of Gjs, is the "interpreter" of Cinnamon's javascript code. It is not an actual interpreter - the interpretation is done by SpiderMonkey. Instead, the role of Cjs is to provide bindings to GNOME libraries through GObject Introspection.
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/cjs" target="_blank">/linuxmint/cjs</a>
+        </p>
+    </div>
+</div>
+
 
 ## Linux Mint
 
-Other Linux Mint projects include
+Other Linux Mint projects include:
 
-## <a href="https://github.com/linuxmint/blueberry">Blueberry</a>
-Blueberry is a bluetooth configuration tool that replaces the old Cinnamon Bluetooth. It depends on GNOME Bluetooth.
+<div class="flex flex-row">
+    <img src="/icons/projects/blueberry.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Blueberry</h3>
+        <p>
+        Blueberry is a bluetooth configuration tool that replaces the old Cinnamon Bluetooth. It depends on GNOME Bluetooth.
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/blueberry" target="_blank">/linuxmint/blueberry</a>
+        </p>
+    </div>
+</div>
 
-## <a href="https://github.com/linuxmint/mdm">MDM</a>
-MDM, forked from GDM, is a display manager, not necessarily tied to Cinnamon. MDM officially stands for MDM display manager.
+<div class="flex flex-row">
+    <img src="/icons/projects/mint-logo.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>MDM</h3>
+        <p>
+        MDM, forked from GDM, is a display manager, not necessarily tied to Cinnamon. MDM officially stands for MDM display manager.
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/mdm" target="_blank">/linuxmint/mdm</a>
+        </p>
+    </div>
+</div>
 
-## <a href="https://github.com/linuxmint/nemo">Nemo</a>
-Nemo, forked from Nautilus, is the file manager of Cinnamon.
+<div class="flex flex-row">
+    <img src="/icons/projects/nemo.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Nemo</h3>
+        <p>
+        Nemo, forked from Nautilus, is the file manager of Cinnamon.
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/nemo" target="_blank">/linuxmint/nemo</a>
+        </p>
+    </div>
+</div>
 
-## <a href="https://github.com/linuxmint/muffin">Muffin</a>
-Muffin, forked from Mutter, which is in turn forked from Metacity, is the window manager of Cinnamon. Cinnamon is implemented as a plugin of Muffin.
+<div class="flex flex-row">
+    <img src="/icons/projects/mint-logo.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Muffin</h3>
+        <p>
+        Muffin, forked from Mutter, which is in turn forked from Metacity, is the window manager of Cinnamon. Cinnamon is implemented as a plugin of Muffin.
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/muffin" target="_blank">/linuxmint/muffin</a>
+        </p>
+    </div>
+</div>
 
-### <a href="https://github.com/linuxmint/mintupload">Mint Upload</a>
-### <a href="https://github.com/linuxmint/mintinstall">Mint Install</a>
-### <a href="https://github.com/linuxmint/mintnanny">Mint Nanny</a>
-### <a href="https://github.com/linuxmint/mintbackup">Mint Backup</a>
-### <a href="https://github.com/linuxmint/mint-x-icons">Mint X Icons</a>
-### <a href="https://github.com/linuxmint/mint-themes">Mint Themes</a>
-### <a href="https://github.com/linuxmint/mint-themes-gtk3">Mint Themes Gtk3</a>
-### <a href="https://github.com/linuxmint/mintupdate">Mint Update</a>
-### <a href="https://github.com/linuxmint/mintstick">Mint Stick</a>
-### <a href="https://github.com/linuxmint/live-installer">Live Installer</a>
-### Mint Translations
+<div class="flex flex-row">
+    <img src="/icons/projects/mintupload.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Mint Upload</h3>
+        <p>
+        Uploads files on the Internet  mintUpload allow you to upload files on the Internet. This makes it easier to share or send big files which would not fit in an email.
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/mintupload" target="_blank">/linuxmint/mintupload</a>
+        </p>
+    </div>
+</div>
 
-Package with localization files for Linux Mint applications and services
+<div class="flex flex-row">
+    <img src="/icons/projects/mintinstall.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Mint Install</h3>
+        <p>
+        A software manager to easily install new applications.
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/mintinstall" target="_blank">/linuxmint/mintinstall</a>
+        </p>
+    </div>
+</div>
 
-GitHub: [/linuxmint/mint-translations](https://github.com/linuxmint/mint-translations)
+<div class="flex flex-row">
+    <img src="/icons/projects/mintnanny.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Mint Nanny</h3>
+        <p>
+        Domain blocker for Linux Mint. Blocks outgoing traffic towards chosen domain names using /etc/hosts
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/mintnanny" target="_blank">/linuxmint/mintnanny</a>
+        </p>
+    </div>
+</div>
 
-### Mint Sources
+<div class="flex flex-row">
+    <img src="/icons/projects/mintbackup.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Mint Backup</h3>
+        <p>
+        Home Directory Backup Tool - Easily backup and restore your personal data and your software selection.
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/mintbackup" target="_blank">/linuxmint/mintbackup</a>
+        </p>
+    </div>
+</div>
 
-Configure the sources for installable software and updates, manage PPAs and authentication keys
+<div class="flex flex-row">
+    <img src="/icons/projects/cs-themes.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Mint Themes and Icons</h3>
+        <p>
+        A collection of Mint themes for GTK2 and GTK3
+        <ul>
+            <li><a href="https://github.com/linuxmint/mint-themes" target="_blank">/linuxmint/mint-themes</a></li>
+            <li><a href="https://github.com/linuxmint/mint-themes-gtk3" target="_blank">/linuxmint/mint-themes-gtk3</a></li>
+            <li><a href="https://github.com/linuxmint/mint-x-icons">Mint X Icons</a></li>
+        </ul>
+        </p>
+    </div>
+</div>
 
-GitHub: [/linuxmint/mintsources](https://github.com/linuxmint/mintsources)
+<div class="flex flex-row">
+    <img src="/icons/projects/mintupdate.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Mint Update</h3>
+        <p>
+        Is a graphical application to which helps installing security updates and new versions of packages.
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/mintupdate" target="_blank">/linuxmint/mintupdate</a></p>
+    </div>
+</div>
 
-### Mint Menu
+<div class="flex flex-row">
+    <img src="/icons/projects/usb-creator-gtk.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Mint Stick</h3>
+        <p>Is a graphical application to write .img and .iso files to USB keys. It can also format USB keys from a contextual menu in Cinammon, MATE, and KDE desktops.
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/mintstick" target="_blank">/linuxmint/mintstick</a></p>
+    </div>
+</div>
 
-One of the most advanced menus under linux. Mint Menu supports filtering, favorites, easy uninstallation, autosession, and many other features.
+<div class="flex flex-row">
+    <img src="/icons/projects/live-installer.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Mint Live Installer</h3>
+        <p>
+        Is an application which provide "Live Install" of Linux Mint from CD/DVD/USB media
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/live-installer" target="_blank">/linuxmint/live-installer</a>
+        </p>
+    </div>
+</div>
 
-GitHub: [/linuxmint/mintmenu](https://github.com/linuxmint/mintmenu)
+<div class="flex flex-row">
+    <img src="/icons/projects/gtranslator.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Mint Translations</h3>
+        <p>
+        Package with localization files for Linux Mint applications and services.
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/mint-translations" target="_blank">/linuxmint/mint-translations</a>
+        </p>
+    </div>
+</div>
 
-### Mint Welcome
+<div class="flex flex-row">
+    <img src="/icons/projects/mintsources.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Mint Sources</h3>
+        <p>
+        Configure the sources for installable software and updates, manage PPAs and authentication keys.
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/mintsources" target="_blank">/linuxmint/mintsources</a>
+        </p>
+    </div>
+</div>
 
-Linux Mint - welcome dialog. Shows important information about the release/edition of Linux Mint.
+<div class="flex flex-row">
+    <img src="/icons/projects/mint-logo.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Mint Menu</h3>
+        <p>
+        One of the most advanced menus under linux. Mint Menu supports filtering, favorites, easy uninstallation, autosession, and many other features.
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/mintmenu" target="_blank">/linuxmint/mintmenu</a>
+        </p>
+    </div>
+</div>
 
-[Read more...](/projects/mintwelcome.html)
+<div class="flex flex-row">
+    <img src="/icons/projects/mint-logo.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Mint Welcome</h3>
+        <p>
+        Linux Mint - welcome dialog. Shows important information about the release/edition of Linux Mint.
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/mintwelcome" target="_blank">/linuxmint/mintwelcome</a>
+        </p>
+    </div>
+</div>
 
-GitHub: [/linuxmint/mintwelcome](https://github.com/linuxmint/mintwelcome)
+<div class="flex flex-row">
+    <img src="/icons/projects/user-desktop.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Mint Desktop</h3>
+        <p>
+        GitHub: <a href="https://github.com/linuxmint/mintdesktop" target="_blank">/linuxmint/mintdesktop</a>
+        </p>
+    </div>
+</div>
 
-### Mint Desktop
+<div class="flex flex-row">
+    <img src="/icons/projects/mintdrivers.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Mint Drivers</h3>
+        <p>
+        UI application to configure proprietary drivers.
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/mintdrivers" target="_blank">/linuxmint/mintdrivers</a>
+        </p>
+    </div>
+</div>
 
-GitHub: [/linuxmint/mintdesktop](https://github.com/linuxmint/mintdesktop)
+<div class="flex flex-row">
+    <img src="/icons/projects/preferences-desktop-locale.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Mint Locale</h3>
+        <p>
+        Application to configure system locale.
+        <br>
+        GitHub: <a href="https://github.com/linuxmint/mintlocale" target="_blank">/linuxmint/mintlocale</a>
+        </p>
+    </div>
+</div>
 
-### <a href="https://github.com/linuxmint/mintdrivers">Mint Drivers</a>
-### <a href="https://github.com/linuxmint/mintlocale">Mint Locale</a>
+
+
+
