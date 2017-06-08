@@ -9,7 +9,7 @@ permalink: contributing.html
         <p>As a general rule of thumb, don't attempt to start a conversation with pointless statements. If you just say "hello" and shut up, you will get ignored. If you ask if you could speak/ask a question, you will get ignored. If you ask "anyone here?", you won't get ignored. Three different people will answer "no" in three different ways.</p>
     </div>
     <div>
-        <img style="min-width:12rem;min-height:12rem;margin-left:1rem" src="/icons/smartphone.svg" />
+        <i class="fa fa-comments" style="font-size:10rem;margin-left:1rem"></i>
     </div>
 </div>
 
@@ -22,7 +22,7 @@ permalink: contributing.html
 
 <div class="flex flex-row">
     <div>
-        <img style="min-width:12rem;margin-right:1rem" src="/icons/world-map.svg" />
+        <i class="fa fa-language" style="font-size:10rem;margin-right:1rem"></i>
     </div>
     <div>
         <h2>Translations</h2>
@@ -39,7 +39,7 @@ permalink: contributing.html
         <p>Mint and Cinnamon projects are found on <a href="https://github.com/linuxmint/">GitHub</a>. The languages used are mainly C, Javascript and Python. It is a good idea to talk to us on the IRC before starting any coding work. Do not email developers directly. Everything shall be discussed on the IRC (see above for how not to get ignored on the IRC. If you are ignored, you are doing it wrong).</p>
     </div>
     <div>
-        <img style="max-width:12rem;margin-left:1rem" src="/assets/img/octocat.png" />
+        <i class="fa fa-github" style="font-size:10rem;margin-left:1rem"></i>
     </div>
 </div>
 
@@ -47,7 +47,7 @@ permalink: contributing.html
 
 <div class="flex flex-row">
     <div>
-        <img style="min-width:12rem;margin-right:1rem" src="/icons/ladybug.svg" />
+        <i class="fa fa-bug" style="font-size:10rem;margin-right:1rem"></i>
     </div>
     <div>
         <h2>Reporting an issue</h2>
