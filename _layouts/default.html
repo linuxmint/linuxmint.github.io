@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang='{{ site.lang | default: "en-US" }}'>
 <head>
     <meta charset="UTF-8">
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title | default: site.github.repository_name }} by {{ site.github.owner_name }}</title>
@@ -13,31 +13,16 @@
 </head>
 <body>
 <section class="page-header">
-    {% if page.url == '/' %}
     <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+    {% if page.url == '/' %}
     <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
     {% endif %}
-    {{ page.categories }}
-    <a href="/" class="btn">
-        <i class="fa fa-home" aria-hidden="true"></i>
-        Home
-    </a>
-    <a href="/projects.html" class="btn">
-        <i class="fa fa-laptop" aria-hidden="true"></i>
-        Projects
-    </a>
-    <a href="/reference/git/index.html" class="btn">
-        <i class="fa fa-book" aria-hidden="true"></i>
-        Reference
-    </a>
-    <a href="/contributing.html" class="btn">
-        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-        How to contribute
-    </a>
-    <a href="https://github.com/linuxmint" class="btn" target="_blank">
-        <i class="fa fa-github-square" aria-hidden="true"></i>
-        GitHub
-    </a>
+
+    <a href="/" class="btn"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+    <a href="/projects.html" class="btn"><i class="fa fa-laptop" aria-hidden="true"></i>Projects</a>
+    <a href="/reference/git/index.html" class="btn"><i class="fa fa-book" aria-hidden="true"></i>Reference</a>
+    <a href="/contributing.html" class="btn"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>How to contribute</a>
+    <a href="https://github.com/linuxmint" class="btn" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i>GitHub</a>
 </section>
 <section class="main-content">
     {{ content }}
@@ -48,6 +33,7 @@
         <span class="site-footer-credits">This website content is created by <a href="https://github.com/linuxmint">Linux Mint Development Team</a>.</span>
     </footer>
 </section>
+
 
 {% if site.google_analytics %}
 <script type="text/javascript">

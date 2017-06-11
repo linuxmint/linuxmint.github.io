@@ -1,0 +1,150 @@
+---
+layout: default
+---
+<h1>Cinnamon Projects</h1>
+
+<p>Cinnamon is composed a lot of smaller interconnected projects:</p>
+
+<div class="flex flex-row">
+    <img src="/icons/projects/cinnamon-logo.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Cinnamon</h3>
+        <p>
+            Cinnamon, forked from GNOME Shell, is the "shell" of Cinnamon. It provides the user interface such as
+            panels, hot corners, menus etc. The ui is written in JavaScript, while its core libraries are written in C.
+            <br>
+            GitHub: <a href="https://github.com/linuxmint/Cinnamon" target="_blank">/linuxmint/Cinnamon</a>
+        </p>
+    </div>
+</div>
+
+<div class="flex flex-row">
+    <img src="/icons/projects/csd-screensaver-proxy.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Cinnamon Screensaver</h3>
+        <p>
+            Cinnamon Screensaver, forked from GNOME Screensaver, is the screen locker you see when you leave the session
+            idle for the a long time. It currently supports loading xscreensaver hacks as well as webkit screensaver.
+            You can also write your own Cinnamon Screensaver plugin without tying to either xscreensaver or webkit.
+            <br>
+            GitHub: <a href="https://github.com/linuxmint/cinnamon-screensaver"
+                       target="_blank">/cinnamon-screensaver</a>
+        </p>
+    </div>
+</div>
+
+<div class="flex flex-row">
+    <img src="/icons/projects/cinnamon-logo.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Cinnamon Desktop</h3>
+        <p>
+            Cinnamon Desktop, fork of GNOME desktop, provides certain useful resources for Cinnamon. Most importantly,
+            it contains the schemas for most Cinnamon components, eg. `org.cinnamon.desktop.screensaver`. It also has a
+            small library that provides certain functions used in, say, Cinnamon Screensaver.
+            <br>
+            GitHub: <a href="https://github.com/linuxmint/cinnamon-desktop"
+                       target="_blank">/linuxmint/cinnamon-desktop</a>
+        </p>
+    </div>
+</div>
+
+<div class="flex flex-row">
+    <img src="/icons/projects/cinnamon-logo.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Cinnamon Menus</h3>
+        <p>Cinnamon Menus, fork of GNOME menus, contains the <code>libcinnamon-menu</code> library, the layout
+            configuration files for the Cinnamon menu, as well as a simple menu editor.</p>
+        <p>The <code>libcinnamon-menu</code> library implements the "Desktop Menu Specification" from freedesktop.org:
+        </p>
+        <ul>
+            <li><a href="http://freedesktop.org/wiki/Specifications/menu-spec">http://freedesktop.org/wiki/Specifications/menu-spec</a>
+            </li>
+            <li><a href="http://specifications.freedesktop.org/menu-spec/menu-spec-latest.html">http://specifications.freedesktop.org/menu-spec/menu-spec-latest.html</a>
+            </li>
+        </ul>
+        <p>GitHub: <a href="https://github.com/linuxmint/cinnamon-menus" target="_blank">/linuxmint/cinnamon-menus</a>
+        </p>
+    </div>
+</div>
+
+
+<div class="flex flex-row">
+    <img src="/icons/projects/cinnamon-logo.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Cinnamon Settings Daemon</h3>
+        <p>Cinnamon Settings Daemon is a fork of GNOME Settings Daemon.</p>
+        <p>It provides many session-wide services and functions that require a long-running process. Among the services
+            implemented by cinnamon-settings-daemon are an XSettings manager, which provides theming, font and other
+            settings to GTK+ applications, and a clipboard manager, which preserves clipboard contents when an
+            application exits. Many user interface elements of cinnamon and cinnamon-settings rely on
+            cinnamon-settings-daemon for their functionality.</p>
+        <p>The internal architecture of cinnamon-settings-daemon consists of a number of plugins, which provide
+            functionality such as printer notifications, software update monitoring, background changing, etc. For
+            debugging purposes, these plugins can be individually disabled by changing the gsettings key
+            `org.cinnamon.settings-daemon.plugins.plugin-name.active`, where `plugin-name` is the name of the plugin. To
+            see a list of all plugins, use the command `gsettings list-children
+            org.cinnamon.settings-daemon.plugins`.</p>
+        <p>Cinnamon Settings Daemon takes the name `org.cinnamon.SettingsDaemon` on the session bus to ensure that only
+            one instance is running. Some plugins export objects under this name to make their functionality available
+            to other applications. The interfaces of these objects should generally be considered private and
+            unstable.</p>
+        <p>Cinnamon Settings Daemon is a required component of the Cinnamon desktop, i.e. it is listed in the
+            RequiredComponents field of `/usr/share/cinnamon-session/sessions/cinnamon.session`. It is started in the
+            initialization phase of the session, and cinnamon-session will restart it if it crashes.</p>
+        <p>GitHub: <a href="https://github.com/linuxmint/cinnamon-settings-daemon" target="_blank">/linuxmint/cinnamon-settings-daemon</a>
+        </p>
+    </div>
+</div>
+
+<div class="flex flex-row">
+    <img src="/icons/projects/cinnamon-logo.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Cinnamon Control Center</h3>
+        <p>Cinnamon Control Center is a fork of GNOME Control Center. The official control center of Cinnamon in
+            Cinnamon Settings, which is written in python and part of Cinnamon itself. However, some of the modules are
+            still not yet ported to python, and we have to rely on the C modules, which are found here.</p>
+        <p>GitHub: <a href="https://github.com/linuxmint/cinnamon-control-center" target="_blank">/linuxmint/cinnamon-control-center</a>
+        </p>
+    </div>
+</div>
+
+<div class="flex flex-row">
+    <img src="/icons/projects/cinnamon-logo.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Cinnamon Session</h3>
+        <p>This is responsible for starting the Cinnamon session. This is typically executed by the login manager
+            (either mdm, xdm, or from your X startup scripts). It will load either your saved session, or it will
+            provide a default session for the user as defined by the system administrator (or the default GNOME
+            installation on your system).</p>
+        <p>GitHub: <a href="https://github.com/linuxmint/cinnamon-session"
+                      target="_blank">/linuxmint/cinnamon-session</a></p>
+    </div>
+</div>
+
+<div class="flex flex-row">
+    <img src="/icons/projects/gtranslator.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>Cinnamon Translations</h3>
+        <p>
+            Cinnamon translations is a package that contains the translations used in Cinnamon
+            <br>
+            GitHub: <a href="https://github.com/linuxmint/cinnamon-translations"
+                       target="_blank">/cinnamon-translations</a>
+        </p>
+    </div>
+</div>
+
+
+<div class="flex flex-row">
+    <img src="/icons/projects/cinnamon-logo.svg" class="margin-right-1rem img-square-5rem">
+    <div>
+        <h3>CJS</h3>
+        <p>
+            Cjs, fork of Gjs, is the "interpreter" of Cinnamon's javascript code. It is not an actual interpreter - the
+            interpretation is done by SpiderMonkey. Instead, the role of Cjs is to provide bindings to GNOME libraries
+            through GObject Introspection.
+            <br>
+            GitHub: <a href="https://github.com/linuxmint/cjs" target="_blank">/linuxmint/cjs</a>
+        </p>
+    </div>
+</div>
