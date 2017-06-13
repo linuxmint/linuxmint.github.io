@@ -7,7 +7,7 @@ permalink: reporting-an-issue.html
 
 So. You have a problem with Cinnamon. Something's not working. What should you do about it?
 
-First have a look at the bug tracker of [Cinnamon](https://github.com/linuxmint/Cinnamon/issues) or whatever project you find the bug in. 
+First have a look at the bug tracker of [Cinnamon](https://github.com/linuxmint/Cinnamon/issues) or whatever project you find the bug in.
 
 There is a search button, and see if someone has reported the issue already. GitHub unhelpfully defaults to searching open issues only, but **search in both open and closed issues**.
 
