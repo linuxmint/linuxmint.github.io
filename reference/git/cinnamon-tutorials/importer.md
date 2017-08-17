@@ -111,43 +111,46 @@ The source is in `/usr/share/cinnamon/js/misc/`
 
 ### Importing xlet modules
 
-When you want to split a big xlet code into smaller files, you'll need to import them.
-A simple way is using `imports.xlet`, wher `xlet` is your xlet type
-(`applet`, `desklet`, `extension`, `search_provider`)
+When you want to split a big xlet file into smaller files, you'll need to import them.
+The best way is using `imports.ui.manager.xlet[UUID]`.
+`manager` is one of `appletManager`, `deskletManager`, or `extensionSystem`.
+`xlet` is the xlet type pluralized and is one of `applets`, `desklets`, or `extensions`.
+`UUID` is the string of your xlet's UUID.
+
+Importing for applets:
 
 ```javascript
-imports.applet.foo // get foo.js in your applet directory
+const Module = imports.ui.appletManager['foo@bar'].module; // get module.js in your applet directory
 ```
 
-### \_\_init__.js
-
-When writing xlets, it is common that you have some functions or constants that you need in many files.
-For that, there is `__init__.js`.
-It is a normal JavaScript file, but every function or variable can be accessed directly via `import.*`.
-
-Examples are often used functions, like a modified `_()` function for translating your xlet.
-
-`__init__.js`
+Importing for desklets:
 
 ```javascript
-const Gettext = imports.gettext;
-
-const uuid = "xlet@uuid";
-
-Gettext.bindtextdomain(uuid, GLib.get_home_dir() + "/.local/share/locale");
-
-function _(str){
-    return Gettext.dgettext(uuid, str);
-}
+const Module = imports.ui.deskletManager['foo@bar'].module; // get module.js in your desklet directory
 ```
 
-In your other files:
+Importing for extensions:
 
 ```javascript
-const uuid = imports.xlet.uuid;
-const _ = imports.xlet._;
+const Module = imports.ui.extensionSystem['foo@bar'].module; // get module.js in your extension directory
 ```
 
-Remember: replace `xlet` in `imports.xlet` to your xlet type.
+In Cinnamon 3.6+, you can also import xlets by using `imports.xletTypePluralized[UUID]`. This method is not compatible with previous versions of Cinnamon.
 
-There is no harm renaming `__init__.js` to something else (like `util.js`) and using `imports.xlet.util.*`.
+Importing for applets:
+
+```javascript
+const Module = imports.applets['foo@bar'].module;
+```
+
+Importing for desklets:
+
+```javascript
+const Module = imports.desklets['foo@bar'].module;
+```
+
+Importing for extensions:
+
+```javascript
+const Module = imports.extensions['foo@bar'].module;
+```
