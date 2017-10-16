@@ -34,7 +34,7 @@
       padding: 0;
 
       li {
-        margin: 3rem 1rem 1rem 1rem;
+        margin: 3rem 1rem 1rem;
         border-bottom: solid 2px transparent;
 
         &:hover {
@@ -110,10 +110,10 @@
   max-height: 5rem;
 }
 
-.img-square-10rem {
-  min-width: 10rem;
-  max-width: 10rem;
-  max-height: 10rem;
+.img-square-7rem {
+  min-width: 7rem;
+  max-width: 7rem;
+  max-height: 7rem;
 }
 
 .btn {
@@ -125,5 +125,31 @@
 .main-content {
   h1 {
     margin: 1rem 0;
+  }
+}
+
+/* -------------------------
+  Updates
+------------------------- */
+#container {
+  display: flex;
+  text-align: center;
+}
+
+.column {
+  padding: 1rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 858px) {
+  #container {
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .column {
+    text-align: center;
   }
 }
