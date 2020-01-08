@@ -1,6 +1,6 @@
 # Linux Mint Developer Website sources
 
-This is a source repository for [developer.linuxmint.com](http://developer.linuxmint.com)
+This is a source repository for [developer.linuxmint.com](https://developer.linuxmint.com)
 
 ## Base Jekyll theme
 
