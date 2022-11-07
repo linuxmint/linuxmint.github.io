@@ -21,7 +21,7 @@ The modules covered by the Javascript documentation are those imported via <code
 
 ### Accessing the documentation
 
-There are two ways of accessing this documentation, one of which is what you are currently using. The first method is accessing it online, which will be available at <a class="ulink" href="http://linuxmint.github.io" target="_top">http://linuxmint.github.io</a>.</p>
+There are two ways of accessing this documentation, one of which is what you are currently using. The first method is accessing it online, which will be available at <a class="ulink" href="http://linuxmint.github.io" target="_top">http://linuxmint.github.io</a>.
 
 The second method is to access it locally. Install the program <code class="code">devhelp</code> and the <code class="code">cinnamon-doc</code> package (might be named differently in different distros or included in the <code class="code">cinnamon</code> package itself). Then run the program <code class="code">devhelp</code> to access all documentations you have installed in your system (not limited to Cinnamon).
 
