@@ -51,7 +51,7 @@ In this case:
 - <code class="code">step</code>: the step amount for this setting - how much the value changes for each <span class="quote">“<span class="quote">click</span>”</span> or notch of the widget.
 - <code class="code">description</code>: The description you want by your setting in the configuration panel, to explain what the setting controls.
 
-The JSON file must be valid - it must pass any structure tests, not have extra commas, and so forth. There are a number of tools available online where you can paste the contents of your file in, and it will tell you if it it valid or not, and point out problem areas. One such site is <a class="ulink" href="http://jsonlint.com/" target="_top">http://jsonlint.com/</a>.
+The JSON file must be valid - it must pass any structure tests, not have extra commas, and so forth. There are a number of tools available online where you can paste the contents of your file in, and it will tell you if it is valid or not, and point out problem areas. One such site is <a class="ulink" href="http://jsonlint.com/" target="_top">http://jsonlint.com/</a>.
     
 So now we’ve got a <code class="code">settings-schema.json</code> file. It goes in your applet directory, alongside the <code class="code">metadata.json</code>, <code class="code">applet.js</code>, and any other files you have.
     
