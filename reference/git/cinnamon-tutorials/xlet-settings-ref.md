@@ -158,9 +158,10 @@ you would put `myCallback` for the callback value.
 These fields can be added to any widget:
 
 - `indent: true`: Indent the widget in the settings page to help with organizing your layout.
-- `dependency: &lt;key&gt;`: where `key` is the
-  name of a `checkbox` setting. If that checkbox setting is un-checked,
-  this setting will be made insensitive (greyed out). The checkbox must occur <em>before</em> the setting that depends on it.
+- `dependency: "<key>"`: where `key` is the name of a `checkbox` or `combobox` setting.
+  If it is a checkbox and that checkbox setting is un-checked, this setting will be hidden.
+  If it is a combobox, you need to state a option of this combobox too, e.g. `"type=http"`. Your setting will only be visible if the given option is selected in the combobox.
+  The checkbox/combobox must occur <em>before</em> the setting that depends on it.
 - `tooltip`: Adds a popup tooltip to the widget
 
 #### Signals
