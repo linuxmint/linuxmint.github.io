@@ -7,7 +7,7 @@
 
 ### Introduction
 
-You probably want to display information on your xlet which need to be queried from the system. This can be done using different ways, and the most common is to execute a command (spawn a subprocess) and check it's output. But you should check first, if you can replace subprocesses with any other method:
+You probably want to display information on your xlet which need to be queried from the system. This can be done using different ways, and the most common is to execute a command (spawn a subprocess) and check it's output. But you should check first if you can replace subprocesses with any other method:
 
 - **Reading file contents**  
   For example, if you want to query the system's memory usage, you can execute `free` and parse it's output. But memory information are also exposed in the file `/proc/meminfo`. You should prefer the file reading method in this case.
@@ -16,7 +16,7 @@ You probably want to display information on your xlet which need to be queried f
   You can search the [Gjs docs](https://gjs-docs.gnome.org/) if there exists an appropriate library for you. For example, GLib provides functions for getting free/used disk space and the Soup lib can make HTTP(S) requests.
 
 - **Subprocesses**  
-  If none of the above methods fullify your needs, you can call an arbitray command (binary or script) to get the information you need. But be careful with subprocesses, they can cause stuttering on the desktop if used improperly. Of course, you can use them to not only get information but to do any other useful work too, like starting background tasks or GUI applications.
+  If none of the above methods fulfill your needs, you can call an arbitray command (binary or script) to get the information you need. But be careful with subprocesses, they can cause stuttering on the desktop if used improperly. Of course, you can use them to not only get information but to do any other useful work too, like starting background tasks or GUI applications.
 
 
 ### Reading file contents
@@ -64,7 +64,7 @@ this.monitor.connect('changed', Lang.bind(this, function(monitor, file, other_fi
 
 ### Subprocesses
 
-The initilization of a subprocess, whether it's done via `Gio.Subprocess()` or `Glib.spawn_async_with_pipes_and_fds()`, needs some time in which the desktop will not be responsive for a short amount of time. Depending on how many subprocesses you spawn and how many xlet instances the user created, this sums up to a visible and annoying drawback. But GLib has an optimized codepath which is used if the following requirements are met. This also means that not all features of a GLib subprocess can be used.
+The initilization of a subprocess, whether it's done via `Gio.Subprocess()` or `Glib.spawn_async_with_pipes_and_fds()`, needs some milliseconds in which the desktop will not be responsive. Depending on how many subprocesses you spawn and how many xlet instances the user created, this sums up to a visible and annoying drawback. But GLib has an optimized codepath which is used if the following requirements are met. In other words this means that not all features of a GLib subprocess can be used.
 
 1. `G_SPAWN_DO_NOT_REAP_CHILD` must be set
 2. `G_SPAWN_LEAVE_DESCRIPTORS_OPEN` must be set
