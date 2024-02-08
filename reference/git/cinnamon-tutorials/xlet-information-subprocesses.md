@@ -88,6 +88,12 @@ try {
 		throw new Error(_('Error executing command!'));
 	}
 
+	// this is necessary for correctly ending the subprocess
+	// without this, a zombie process would be left behind, e.g. visible with `ps -e | grep ping`
+	GLib.child_watch_add(GLib.PRIORITY_DEFAULT, child_pid, function(pid, wait_status, user_data) {
+		GLib.spawn_close_pid(child_pid);
+	});
+
 	// store a reference of our xlet in a local variable
 	// we need this to report the result back to the UI of our xlet
 	let deskletInstance = this;
@@ -109,7 +115,6 @@ try {
 			// otherwise, you will run into errors like "Too many open files" when too many processes were created
 			GLib.source_remove(tagWatchStdOut);
 			channel.shutdown(true);
-			GLib.spawn_close_pid(child_pid);
 		}
 	);
 
