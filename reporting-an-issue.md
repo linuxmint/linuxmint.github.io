@@ -27,6 +27,8 @@ When opening your issue, be as descriptive as possible. If possible, tell us
 - what *actually* happened
 - whether the problem happens consistently or intermittently
 
+If the program actually 'crashed' (The window disappeared, or, in the case of Cinnamon, the desktop crashed and you were presented with the restart dialog), you should also attempt to locate and attach low-level crash information. See [this guide](/reference/git/bugs/mintreport-crash-info.html) for more information on how to accomplish this.
+
 In particular, don't just post an error log and expect us to know what was going on. Explain what you were trying to do, anything special you were trying out, what problems the errors caused (freezing, crashing, or nothing) etc. Contrary to popular belief, developers are not psychic.
 
 Note that you *don't* have to include all these pieces of information all the time. For example, if your issue is about Cinnamon crashing under certain circumstances, you don't have to say "I expect Cinnamon to not crash" - we all know that and it sounds silly.
