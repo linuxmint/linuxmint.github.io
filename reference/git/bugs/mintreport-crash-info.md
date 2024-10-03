@@ -2,7 +2,7 @@
 [Reference](/reference/git/) / 
 [Bugs](/reference/git/bugs)
 
-# System Reports
+# Using System Reports to collect crash information
 The System Reports tool automatically gathers useful data when an application crashes. This information can be critical in fixing the bug that caused the crash.
 
 ### Launching
